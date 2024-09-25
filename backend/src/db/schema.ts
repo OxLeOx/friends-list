@@ -1,7 +1,7 @@
 import { sql } from 'drizzle-orm';
 import { integer, pgTable, serial, text } from 'drizzle-orm/pg-core';
 
-export const products = pgTable('users', {
+export const Users = pgTable('users', {
   id: serial('id').primaryKey(),
   name: text('name').notNull(),
   bio: text('bio'),
